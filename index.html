@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <title>L'Index Aletheia</title>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="top-bar">
+            <p class="symbols">Αλήθεια · Veritas </p>
+            <button class="theme-btn">☾ Theme</button>
+        </div>
+    </header>
+
+    <!-- Main -->
+    <main>
+
+        <!-- HERO SECTION -->
+        <section class="hero">
+
+            <h1 class="title">L'Index Aletheia</h1>
+            <p class="subtitle">Seek truth through words</p>
+
+            <!-- Search -->
+            <div class="search-box">
+                <input 
+                    type="text" 
+                    id="searchInput" 
+                    placeholder="Seek a thought..." 
+                >
+                
+                <p id="errorMsg" class="error">
+                    La pensée requiert plus de précision
+                </p>
+
+                <button id="searchBtn" disabled>
+                    Reveal Truth
+                </button>
+            </div>
+
+        </section>
+
+        <!-- RESULTS SECTION (hidden by default) -->
+        <section class="gallery" id="gallery" style="display: none;">
+
+            <div class="quote-card">
+
+                <p class="quote">
+                    “The unexamined life is not worth living.”
+                </p>
+
+                <p class="author">— Socrates</p>
+
+                <img 
+                    src="https://source.unsplash.com/600x400/?philosophy,dark" 
+                    alt="philosophy image"
+                >
+
+            </div>
+
+            <!-- Empty state -->
+            <p class="empty">
+                This truth does not exist in this possible world.
+            </p>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+
+        
+
+    </footer>
+
+</body>
+</html>

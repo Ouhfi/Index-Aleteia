@@ -1,0 +1,204 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ROOT COLORS */
+:root {
+    --black: #0D0D0D;
+    --white: #FAFAFA;
+    --gray: #888888;
+}
+
+/* BODY */
+body {
+    background-color: var(--black);
+    color: var(--white);
+    font-family: 'Cormorant Garamond', serif;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* HEADER */
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    color: var(--gray);
+    margin-bottom: 60px;
+}
+
+.theme-btn {
+    background: transparent;
+    border: 1px solid var(--gray);
+    color: var(--gray);
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.theme-btn:hover {
+    color: var(--white);
+    border-color: var(--white);
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.title {
+    font-family: 'IM Fell English', serif;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-style: italic;
+    color: var(--gray);
+    margin-bottom: 40px;
+}
+
+/* SEARCH */
+.search-box {
+    max-width: 300px;
+    margin: auto;
+}
+
+.search-box input {
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid var(--gray);
+    padding: 10px 5px;
+    color: var(--white);
+    outline: none;
+    transition: 0.3s;
+}
+
+.search-box input:focus {
+    border-bottom: 1px solid var(--white);
+    box-shadow: 0 5px 15px rgba(255,255,255,0.05);
+}
+
+/* ERROR */
+.error {
+    display: none;
+    font-size: 12px;
+    color: var(--gray);
+    margin-top: 8px;
+    font-style: italic;
+}
+
+/* BUTTON */
+#searchBtn {
+    margin-top: 20px;
+    width: 100%;
+    padding: 12px;
+    background-color: #444;
+    border: none;
+    color: var(--white);
+    cursor: not-allowed;
+    transition: 0.3s;
+    letter-spacing: 2px;
+}
+
+#searchBtn:not(:disabled) {
+    background-color: var(--white);
+    color: var(--black);
+    cursor: pointer;
+}
+
+#searchBtn:not(:disabled):hover {
+    background-color: transparent;
+    color: var(--white);
+    border: 1px solid var(--white);
+}
+
+/* GALLERY */
+.gallery {
+    margin-top: 60px;
+    text-align: center;
+    animation: fadeIn 0.6s ease-in-out;
+}
+
+.quote-card {
+    margin-bottom: 40px;
+}
+
+.quote {
+    font-family: 'IM Fell English', serif;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.author {
+    font-size: 14px;
+    color: var(--gray);
+    margin-bottom: 20px;
+}
+
+.quote-card img {
+    width: 100%;
+    border-radius: 4px;
+    opacity: 0.8;
+}
+
+/* EMPTY STATE */
+.empty {
+    font-style: italic;
+    color: var(--gray);
+}
+
+
+
+.design-system h4 {
+    font-size: 12px;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+    color: var(--gray);
+}
+
+.colors span {
+    display: inline-block;
+    margin: 5px;
+    font-size: 12px;
+}
+
+.fonts p {
+    font-size: 13px;
+    margin-top: 5px;
+    color: var(--gray);
+}
+
+/* ANIMATION */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* RESPONSIVE (DESKTOP) */
+@media (min-width: 768px) {
+
+    .title {
+        font-size: 48px;
+    }
+
+    .search-box {
+        max-width: 400px;
+    }
+
+    .quote {
+        font-size: 26px;
+    }
+}
